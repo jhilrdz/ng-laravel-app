@@ -719,6 +719,8 @@ ARG INSTALL_NPM_GULP=false
 ARG INSTALL_NPM_BOWER=false
 ARG INSTALL_NPM_VUE_CLI=false
 ARG INSTALL_NPM_ANGULAR_CLI=false
+# 2023-02-27 HRM: Install NX Monorepo
+ARG INSTALL_NPM_NX_ANGULAR_CLI=false
 ARG NPM_REGISTRY
 ENV NPM_REGISTRY ${NPM_REGISTRY}
 ARG NPM_FETCH_RETRIES
@@ -759,6 +761,9 @@ RUN if [ ${INSTALL_NODE} = true ]; then \
         ;fi \
         && if [ ${INSTALL_NPM_ANGULAR_CLI} = true ]; then \
         npm install -g @angular/cli \
+        ;fi \
+        && if [ ${INSTALL_NPM_NX_ANGULAR_CLI} = true ]; then \
+        npm install -g nx \
         ;fi \
 ;fi
 
