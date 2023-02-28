@@ -2,7 +2,9 @@
   "name": "frontend",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:prod": "nx build --project admin --prod && cp ../../public/assets/apps/admin/index.html ../views/angular.blade.php"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~15.1.0",
