@@ -17,5 +17,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-/resources/views/angular.blade.php
-/public/assets/
+/resources/views/angular-admin.blade.php
+/resources/views/angular-portal.blade.php
+/public/admin/
+/public/portal/

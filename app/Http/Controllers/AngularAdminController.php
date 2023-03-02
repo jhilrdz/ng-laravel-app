@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AngularController extends Controller
+class AngularAdminController extends Controller
 {
     //
     public function index() {
-        return view('angular');
+        return view('angular-admin');
     }
 }

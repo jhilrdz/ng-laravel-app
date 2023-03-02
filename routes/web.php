@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AngularController;
+use App\Http\Controllers\AngularAdminController;
+use App\Http\Controllers\AngularPortalController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,4 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
-Route::any('/{any}', [AngularController::class, 'index'])->where('any', '^(?!api).*$');
+Route::any('/{any}', [AngularPortalController::class, 'index'])->where('any', '^(?!api).*$');
+Route::any('/admin/**', [AngularAdminController::class, 'index']);

@@ -3,13 +3,13 @@
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/admin/src",
-  "prefix": "frontend",
+  "prefix": "admin",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "../../public/assets/apps/admin",
+        "outputPath": "../../public/admin",
         "index": "apps/admin/src/index.html",
         "main": "apps/admin/src/main.ts",
         "polyfills": ["zone.js"],
@@ -34,7 +34,7 @@
             }
           ],
           "outputHashing": "all",
-          "baseHref": "/assets/apps/admin/"
+          "baseHref": "/admin/"
         },
         "development": {
           "buildOptimizer": false,
