@@ -15,7 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@frontend/web/ui/layout": ["libs/web/ui/layout/src/index.ts"]
+      "@frontend/web/ui/admin-layout": [
+        "libs/web/ui/admin-layout/src/index.ts"
+      ],
+      "@frontend/web/ui/portal-layout": [
+        "libs/web/ui/portal-layout/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -3,8 +3,9 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
-        "admin:build:prod": "nx build --project admin --prod && cp ../../public/admin/index.html ../views/angular-admin.blade.php",
-        "portal:build:prod": "nx build --project portal --prod && cp ../../public/portal/index.html ../views/angular-portal.blade.php"
+        "admin:build": "nx build --project admin --prod && cp ../../public/admin/index.html ../views/angular-admin.blade.php",
+        "portal:build": "nx build --project portal --prod && cp ../../public/portal/index.html ../views/angular-portal.blade.php",
+        "build:prod": "npm run admin:build & npm run portal:build"
     },
     "private": true,
     "dependencies": {

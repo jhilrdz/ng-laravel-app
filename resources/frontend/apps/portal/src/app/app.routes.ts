@@ -1,9 +1,9 @@
 import { Route } from '@angular/router';
-import { LayoutComponent } from '@frontend/web/ui/layout';
+import { PortalLayoutComponent } from '@frontend/web/ui/portal-layout';
 
 
 export const appRoutes: Route[] = [
   {
-    path: '', component: LayoutComponent
+    path: '', component: PortalLayoutComponent
   }
 ];

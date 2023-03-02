@@ -1,9 +1,12 @@
 import { Route } from '@angular/router';
-import { LayoutComponent } from '@frontend/web/ui/layout';
+import { AdminLayoutComponent } from '@frontend/web/ui/admin-layout';
+
+
+
 
 
 export const appRoutes: Route[] = [
   {
-    path: '', component: LayoutComponent
+    path: '', component: AdminLayoutComponent
   }
 ];
